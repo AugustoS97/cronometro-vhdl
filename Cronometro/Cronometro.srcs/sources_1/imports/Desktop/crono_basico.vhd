@@ -2,18 +2,20 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 
-entity cronometro is
+entity crono is
     Port ( clk : in  STD_LOGIC;
            reset : in  STD_LOGIC;
 		   LED : out std_logic_vector(6 downto 0);
            dp : out  STD_LOGIC;
+           alarma : out std_logic;
+           sw_alarm_on : in std_logic;
 		   an : out std_logic_vector(7 downto 0);
            ce : in  STD_LOGIC);
-end cronometro;
+end crono;
 
-architecture Behavioral of cronometro is
+architecture Behavioral of crono is
 
-signal ce_centesimas, ce_decimas, ce_useg, ce_dseg, ce_minutos, ce_dminutos, ce_horas, ce_dhoras, ce_top : std_logic;
+signal ce_centesimas, ce_decimas, ce_useg, ce_dseg, ce_minutos, ce_dminutos, ce_horas, ce_dhoras, ce_top, alarm, ce_alarm : std_logic;
 signal top_divisor, top_centesimas, top_decimas, top_useg, top_dseg, top_minutos, top_dminutos, top_horas, top_dhoras, top_disp : std_logic;
 signal hex, centesimas, decimas, useg, dseg, minutos, dminutos, horas, dhoras  : std_logic_vector(3 downto 0);
 signal divisor : std_logic_vector(19 downto 0);
@@ -50,7 +52,7 @@ begin
 		ce => '1',
 		top => top_divisor
 	);
-	ce_centesimas <= top_divisor and ce;
+	ce_centesimas <= top_divisor and ce and ce_alarm;
 	sel <= divisor(18 downto 16); -- se�al de refresco 100MHz/2^16
 
 	centesimas_unit: contador 
@@ -240,5 +242,25 @@ with cuenta select
           '0' when "0111",
           '1' when "1000",
           '1' when others;
+
+-- Alarma
+
+value <= dminutos & minutos & dseg &useg ;
+
+process (value, sw_alarm_on, reset)
+    begin
+        if sw_alarm_on = '1' and value = "0000000000100000" then
+            alarm <= '1';
+            ce_alarm <= '0';
+        else
+            alarm <= '0';
+            ce_alarm <= '1';
+        end if;
+        if (reset = '1') then
+            alarm <= '0';
+        end if;
+end process;
+
+alarma <= alarm;
 
 end Behavioral;

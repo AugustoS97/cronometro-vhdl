@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log cronometro.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source cronometro.tcl" );
+         "-log cronometro_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source cronometro_top.tcl" );
 
 
 

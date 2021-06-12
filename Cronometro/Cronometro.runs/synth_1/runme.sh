@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Augusto/Desktop/Cronometro/Cronometro.runs/synth_1'
+HD_PWD='C:/Users/Augusto/Desktop/FPGA_Proyecto1/Cronometro/Cronometro.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log cronometro.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source cronometro.tcl
+EAStep vivado -log cronometro_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source cronometro_top.tcl

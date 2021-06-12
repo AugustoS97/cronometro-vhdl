@@ -2,11 +2,11 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Sat Jun 12 20:22:39 2021
-# Process ID: 18428
-# Current directory: C:/Users/Augusto/Desktop/Cronometro/Cronometro.runs/synth_1
-# Command line: vivado.exe -log cronometro.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cronometro.tcl
-# Log file: C:/Users/Augusto/Desktop/Cronometro/Cronometro.runs/synth_1/cronometro.vds
-# Journal file: C:/Users/Augusto/Desktop/Cronometro/Cronometro.runs/synth_1\vivado.jou
+# Start of session at: Sat Jun 12 23:03:41 2021
+# Process ID: 10276
+# Current directory: C:/Users/Augusto/Desktop/FPGA_Proyecto1/Cronometro/Cronometro.runs/synth_1
+# Command line: vivado.exe -log cronometro_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cronometro_top.tcl
+# Log file: C:/Users/Augusto/Desktop/FPGA_Proyecto1/Cronometro/Cronometro.runs/synth_1/cronometro_top.vds
+# Journal file: C:/Users/Augusto/Desktop/FPGA_Proyecto1/Cronometro/Cronometro.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source cronometro.tcl -notrace
+source cronometro_top.tcl -notrace
