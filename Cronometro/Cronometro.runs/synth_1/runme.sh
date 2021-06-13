@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Augusto/Desktop/FPGA_Proyecto1/Cronometro/Cronometro.runs/synth_1'
+HD_PWD='C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

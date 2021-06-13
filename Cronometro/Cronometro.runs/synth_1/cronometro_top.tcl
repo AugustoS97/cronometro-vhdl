@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/Augusto/Desktop/FPGA_Proyecto1/Cronometro/Cronometro.runs/synth_1/cronometro_top.tcl"
+  variable script "C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.runs/synth_1/cronometro_top.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,7 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 2
+set_param chipscope.maxJobs 3
 set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
@@ -78,21 +78,21 @@ create_project -in_memory -part xc7a100tcsg324-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/Augusto/Desktop/FPGA_Proyecto1/Cronometro/Cronometro.cache/wt [current_project]
-set_property parent.project_path C:/Users/Augusto/Desktop/FPGA_Proyecto1/Cronometro/Cronometro.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.cache/wt [current_project]
+set_property parent.project_path C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_output_repo c:/Users/Augusto/Desktop/FPGA_Proyecto1/Cronometro/Cronometro.cache/ip [current_project]
+set_property ip_output_repo c:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  C:/Users/Augusto/Desktop/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/new/alarm.vhd
-  C:/Users/Augusto/Desktop/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/contador.vhd
-  C:/Users/Augusto/Desktop/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/crono_basico.vhd
-  C:/Users/Augusto/Desktop/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/top_level.vhd
-  C:/Users/Augusto/Desktop/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/ug480.vhd
-  C:/Users/Augusto/Desktop/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/new/cronometro_top.vhd
+  C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/new/alarm.vhd
+  C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/contador.vhd
+  C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/crono_basico.vhd
+  C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/top_level.vhd
+  C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/ug480.vhd
+  C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/new/cronometro_top.vhd
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -103,8 +103,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/Augusto/Desktop/FPGA_Proyecto1/Cronometro/Cronometro.srcs/constrs_1/imports/Desktop/Nexys-A7-100T-Master.xdc
-set_property used_in_implementation false [get_files C:/Users/Augusto/Desktop/FPGA_Proyecto1/Cronometro/Cronometro.srcs/constrs_1/imports/Desktop/Nexys-A7-100T-Master.xdc]
+read_xdc C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/constrs_1/imports/Desktop/Nexys-A7-100T-Master.xdc
+set_property used_in_implementation false [get_files C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/constrs_1/imports/Desktop/Nexys-A7-100T-Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

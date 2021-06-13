@@ -2,11 +2,11 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Sun Jun 13 16:35:08 2021
-# Process ID: 3468
-# Current directory: C:/Users/Augusto/Desktop/Crono_xadc/Crono_xadc.runs/synth_1
+# Start of session at: Sun Jun 13 18:27:25 2021
+# Process ID: 13220
+# Current directory: C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Crono_xadc/Crono_xadc.runs/synth_1
 # Command line: vivado.exe -log top_crono.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_crono.tcl
-# Log file: C:/Users/Augusto/Desktop/Crono_xadc/Crono_xadc.runs/synth_1/top_crono.vds
-# Journal file: C:/Users/Augusto/Desktop/Crono_xadc/Crono_xadc.runs/synth_1\vivado.jou
+# Log file: C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Crono_xadc/Crono_xadc.runs/synth_1/top_crono.vds
+# Journal file: C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Crono_xadc/Crono_xadc.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source top_crono.tcl -notrace

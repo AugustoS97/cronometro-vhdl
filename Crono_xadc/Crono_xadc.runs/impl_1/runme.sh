@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Augusto/Desktop/Crono_xadc/Crono_xadc.runs/impl_1'
+HD_PWD='C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Crono_xadc/Crono_xadc.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .write_bitstream.begin.rst
+/bin/touch .init_design.begin.rst
 EAStep vivado -log top_crono.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source top_crono.tcl -notrace
 
 

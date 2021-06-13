@@ -124,14 +124,14 @@ begin
     Port map (
            clk => clk,
            reset => reset,
-           OT => leds_signal_xadc(0),
-           EOC => leds_signal_xadc(1),
-           EOS => leds_signal_xadc(2),
+           OT => leds_signal_xadc(15),
+           EOC => leds_signal_xadc(14),
+           EOS => leds_signal_xadc(13),
            sel => sel,
-           CHANNEL => leds_signal_xadc(7 downto 3),
+           CHANNEL => leds_signal_xadc(12 downto 8),
            an => an_signal_xadc,
            LED => led_signal_xadc,
-           alarm => leds_signal_xadc (15 downto 8)
+           alarm => leds_signal_xadc (7 downto 0)
     );
 
 process (modo)

@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/Augusto/Desktop/Crono_xadc/Crono_xadc.runs/synth_1/top_crono.tcl"
+  variable script "C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Crono_xadc/Crono_xadc.runs/synth_1/top_crono.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,28 +70,29 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 2
+set_param chipscope.maxJobs 3
+set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/Augusto/Desktop/Crono_xadc/Crono_xadc.cache/wt [current_project]
-set_property parent.project_path C:/Users/Augusto/Desktop/Crono_xadc/Crono_xadc.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Crono_xadc/Crono_xadc.cache/wt [current_project]
+set_property parent.project_path C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Crono_xadc/Crono_xadc.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_output_repo c:/Users/Augusto/Desktop/Crono_xadc/Crono_xadc.cache/ip [current_project]
+set_property ip_output_repo c:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Crono_xadc/Crono_xadc.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  C:/Users/Augusto/Desktop/Crono_xadc/Crono_xadc.srcs/sources_1/new/alm_rgb_led.vhd
-  C:/Users/Augusto/Desktop/Crono_xadc/Crono_xadc.srcs/sources_1/new/contador.vhd
-  C:/Users/Augusto/Desktop/Crono_xadc/Crono_xadc.srcs/sources_1/new/conómetro.vhd
-  C:/Users/Augusto/Desktop/Crono_xadc/Crono_xadc.srcs/sources_1/imports/Downloads/top_level.vhd
-  C:/Users/Augusto/Desktop/Crono_xadc/Crono_xadc.srcs/sources_1/new/ug480.vhd
-  C:/Users/Augusto/Desktop/Crono_xadc/Crono_xadc.srcs/sources_1/new/top_crono.vhd
+  C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Crono_xadc/Crono_xadc.srcs/sources_1/new/alm_rgb_led.vhd
+  C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Crono_xadc/Crono_xadc.srcs/sources_1/new/contador.vhd
+  C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Crono_xadc/Crono_xadc.srcs/sources_1/new/conómetro.vhd
+  C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Crono_xadc/Crono_xadc.srcs/sources_1/imports/Downloads/top_level.vhd
+  C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Crono_xadc/Crono_xadc.srcs/sources_1/new/ug480.vhd
+  C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Crono_xadc/Crono_xadc.srcs/sources_1/new/top_crono.vhd
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -102,8 +103,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/Augusto/Desktop/Crono_xadc/Crono_xadc.srcs/constrs_1/new/pines_placa.xdc
-set_property used_in_implementation false [get_files C:/Users/Augusto/Desktop/Crono_xadc/Crono_xadc.srcs/constrs_1/new/pines_placa.xdc]
+read_xdc C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Crono_xadc/Crono_xadc.srcs/constrs_1/new/pines_placa.xdc
+set_property used_in_implementation false [get_files C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Crono_xadc/Crono_xadc.srcs/constrs_1/new/pines_placa.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="49" Path="C:/Users/Augusto/Desktop/FPGA_Proyecto1/Cronometro/Cronometro.xpr">
+<Project Version="7" Minor="49" Path="C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="9d995968c8214b64ae2e14663085812b"/>
