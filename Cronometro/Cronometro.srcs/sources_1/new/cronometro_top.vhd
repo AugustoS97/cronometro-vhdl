@@ -39,7 +39,10 @@ entity cronometro_top is
         LED : out std_logic_vector (6 downto 0);
         dp : out std_logic;
         an : out std_logic_vector(7 downto 0); 
-        led1_rgb, led2_rgb : out std_logic_vector (1 downto 0)
+        led1_rgb, led2_rgb : out std_logic_vector (1 downto 0);
+        sel : in std_logic_vector (2 downto 0); --Selector de parametro a visualizar en xadc
+        modo : in std_logic --Selector de modo crono o xadc
+        
   );
 end cronometro_top;
 
@@ -47,9 +50,12 @@ architecture Behavioral of cronometro_top is
 
 -- DECLARAR LAS SIGNAL
 signal alarma_signal : std_logic;
-signal leds_signal : std_logic_vector (15 downto 0);
-signal led_signal : std_logic_vector (6 downto 0);
-signal an_signal : std_logic_vector(7 downto 0);
+signal leds_signal_alarm : std_logic_vector (15 downto 0);
+signal leds_signal_xadc : std_logic_vector (15 downto 0);
+signal led_signal_crono : std_logic_vector (6 downto 0);
+signal led_signal_xadc : std_logic_vector (6 downto 0); 
+signal an_signal_crono : std_logic_vector(7 downto 0);
+signal an_signal_xadc : std_logic_vector(7 downto 0);
 
 component crono
     Port ( clk : in  STD_LOGIC;
@@ -73,7 +79,20 @@ component alarm
    );
 end component;
 
+component top_level
 
+    Port ( clk : in STD_LOGIC;
+           reset : in STD_LOGIC;
+           OT : out STD_LOGIC;
+           EOC : out STD_LOGIC;
+           EOS : out STD_LOGIC;
+           sel : in STD_LOGIC_VECTOR (2 downto 0);
+           CHANNEL : out STD_LOGIC_VECTOR (4 downto 0);
+           an : out STD_LOGIC_VECTOR (7 downto 0);
+           LED : out STD_LOGIC_VECTOR (6 downto 0);
+           alarm : out STD_LOGIC_VECTOR (7 downto 0)
+           );
+    end component;
 
 begin
 
@@ -81,9 +100,9 @@ begin
     Port map( 
            clk => clk,
            reset => reset,
-		   LED => LED,
+		   LED => led_signal_crono,
            dp => dp,
-		   an => an,
+		   an => an_signal_crono,
 		   sw_alarm_on => sw_alarm_on,
 		   alarma => alarma_signal,
            ce => ce     
@@ -97,6 +116,36 @@ begin
         ce_alarm => alarma_signal,
         led1_rgb => led1_rgb,
         led2_rgb => led2_rgb, 
-        leds => leds        
+        leds => leds_signal_alarm        
        );
+
+
+    xadc_inst : top_level
+    Port map (
+           clk => clk,
+           reset => reset,
+           OT => leds_signal_xadc(0),
+           EOC => leds_signal_xadc(1),
+           EOS => leds_signal_xadc(2),
+           sel => sel,
+           CHANNEL => leds_signal_xadc(7 downto 3),
+           an => an_signal_xadc,
+           LED => led_signal_xadc,
+           alarm => leds_signal_xadc (15 downto 8)
+    );
+
+process (modo)
+begin
+   if modo = '1' then --Si se elige alarma
+        leds <= leds_signal_alarm;
+        LED <= led_signal_crono;        
+        an <= an_signal_crono;
+   else --Si se elige modo XADC
+        LED <= led_signal_xadc;
+        --leds <= "0101010101010101"; --Poner los leds verde en uno encendido y otro apagado
+        leds <= leds_signal_xadc;
+        an <= an_signal_xadc; 
+   end if;
+end process; 
 end Behavioral;
+

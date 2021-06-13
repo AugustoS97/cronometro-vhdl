@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date             : Sat Jun 12 23:05:26 2021
+| Date             : Sun Jun 13 17:47:26 2021
 | Host             : DESKTOP-CDDJBQR running 64-bit major release  (build 9200)
 | Command          : report_power -file cronometro_top_power_routed.rpt -pb cronometro_top_power_summary_routed.pb -rpx cronometro_top_power_routed.rpx
 | Design           : cronometro_top
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.099        |
+| Total On-Chip Power (W)  | 0.123        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.001        |
+| Dynamic (W)              | 0.026        |
 | Device Static (W)        | 0.097        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 84.6         |
-| Junction Temperature (C) | 25.4         |
+| Max Ambient (C)          | 84.4         |
+| Junction Temperature (C) | 25.6         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,16 +52,18 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      289 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      124 |     63400 |            0.20 |
-|   CARRY4       |    <0.001 |       12 |     15850 |            0.08 |
-|   Register     |    <0.001 |      103 |    126800 |            0.08 |
-|   Others       |     0.000 |        4 |       --- |             --- |
-| Signals        |    <0.001 |      217 |       --- |             --- |
-| I/O            |    <0.001 |       41 |       210 |           19.52 |
+| Clocks         |     0.002 |        3 |       --- |             --- |
+| Slice Logic    |    <0.001 |      588 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      202 |     63400 |            0.32 |
+|   CARRY4       |    <0.001 |       17 |     15850 |            0.11 |
+|   Register     |    <0.001 |      273 |    126800 |            0.22 |
+|   F7/F8 Muxes  |    <0.001 |       16 |     63400 |            0.03 |
+|   Others       |     0.000 |        8 |       --- |             --- |
+| Signals        |    <0.001 |      504 |       --- |             --- |
+| I/O            |     0.021 |       45 |       210 |           21.43 |
+| XADC           |     0.002 |        1 |       --- |             --- |
 | Static Power   |     0.097 |          |           |                 |
-| Total          |     0.099 |          |           |                 |
+| Total          |     0.123 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,9 +73,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.016 |       0.001 |      0.015 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.018 |       0.000 |      0.018 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.004 |       0.000 |      0.004 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.019 |       0.004 |      0.015 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.019 |       0.001 |      0.018 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.010 |       0.006 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -83,7 +85,7 @@ Table of Contents
 | Vccbram   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |       NA    | Unspecified | NA         |
+| Vccadc    |       1.800 |     0.021 |       0.001 |      0.020 |       NA    | Unspecified | NA         |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 
 
@@ -140,7 +142,9 @@ Table of Contents
 +----------------+-----------+
 | Name           | Power (W) |
 +----------------+-----------+
-| cronometro_top |     0.001 |
+| cronometro_top |     0.026 |
+|   xadc_inst    |     0.004 |
+|     dut        |     0.004 |
 +----------------+-----------+
 
 

@@ -1,0 +1,95 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun May 30 15:58:40 2021
+# Process ID: 14920
+# Current directory: C:/Users/rober/Desktop/Crono_xadc
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7620 C:\Users\rober\Desktop\Crono_xadc\Crono_xadc.xpr
+# Log file: C:/Users/rober/Desktop/Crono_xadc/vivado.log
+# Journal file: C:/Users/rober/Desktop/Crono_xadc\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/rober/Desktop/Crono_xadc/Crono_xadc.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+open_project C:/Users/rober/Desktop/crono/crono.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/rober/Desktop/crono/crono.runs/impl_1/top_crono.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/rober/Desktop/crono/crono.runs/impl_1/top_crono.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/rober/Desktop/crono/crono.runs/impl_1/top_crono.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/rober/Desktop/crono/crono.runs/impl_1/top_crono.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+open_project {D:/Universidad/Master Ingeniería/2. Segundo curso/Primer cuatrimestre/FPGA/Primer bloque/ug480/ug480.xpr}
+update_compile_order -fileset sources_1
+current_project crono
+close_hw_manager
+current_project ug480
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+current_project Crono_xadc
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+current_project ug480
+current_project Crono_xadc
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+current_project crono
+current_project Crono_xadc
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+current_project crono
+close_project
+current_project Crono_xadc
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+current_project ug480
+current_project Crono_xadc
+current_project ug480
+close_project

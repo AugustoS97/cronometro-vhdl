@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1623535417">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1623602740">
   <File Type="BITSTR-BMM" Name="cronometro_top_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="cronometro_top_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="cronometro_top_timing_summary_init.rpt"/>
@@ -95,6 +95,22 @@
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../crono_basico.vhd"/>
         <Attr Name="ImportTime" Val="1623518978"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/top_level.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../top_level.vhd"/>
+        <Attr Name="ImportTime" Val="1623598024"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/ug480.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../ug480.vhd"/>
+        <Attr Name="ImportTime" Val="1623597843"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>

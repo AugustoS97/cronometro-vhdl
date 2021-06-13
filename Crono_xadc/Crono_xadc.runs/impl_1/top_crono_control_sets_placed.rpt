@@ -1,0 +1,103 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sun Jun 13 16:36:44 2021
+| Host         : DESKTOP-CDDJBQR running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_crono_control_sets_placed.rpt
+| Design       : top_crono
+| Device       : xc7a100t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    25 |
+|    Minimum number of control sets                        |    25 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    63 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    25 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |    11 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    12 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              24 |            7 |
+| No           | No                    | Yes                    |               9 |            4 |
+| No           | Yes                   | No                     |              18 |            5 |
+| Yes          | No                    | No                     |             143 |           39 |
+| Yes          | No                    | Yes                    |              79 |           25 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------+------------------------------------------------+---------------------------------------+------------------+----------------+--------------+
+|         Clock Signal         |                  Enable Signal                 |            Set/Reset Signal           | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------------------+------------------------------------------------+---------------------------------------+------------------+----------------+--------------+
+|  inst_top_xadc/dut/dclk_bufg |                                                |                                       |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG               |                                                | inst_crono_digital/dseg_unit/reset_0  |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG               | inst_crono_digital/decimas_unit/E[0]           | inst_crono_digital/decimas_unit/AR[0] |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG               | inst_crono_digital/centesimas_unit/ce7_out     | inst_crono_digital/decimas_unit/AR[0] |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG               | inst_crono_digital/minutos_unit/E[0]           | inst_crono_digital/decimas_unit/AR[0] |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG               | inst_crono_digital/minutos_unit/q_reg[2]_0[0]  | inst_crono_digital/decimas_unit/AR[0] |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG               | inst_crono_digital/decimas_unit/q_reg[2]_0[0]  | inst_crono_digital/decimas_unit/AR[0] |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG               | inst_crono_digital/dseg_unit/q_reg[3]_1[0]     | inst_crono_digital/decimas_unit/AR[0] |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG               | inst_crono_digital/dseg_unit/q_reg[3]_0[0]     | inst_crono_digital/decimas_unit/AR[0] |                2 |              4 |         2.00 |
+|  inst_top_xadc/dut/dclk_bufg |                                                | reset_IBUF                            |                3 |              5 |         1.67 |
+|  inst_top_xadc/dut/dclk_bufg | inst_top_xadc/dut/daddr[6]_i_1_n_0             |                                       |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG               | inst_crono_digital/divisorfrec_unit/E[0]       | inst_crono_digital/decimas_unit/AR[0] |                3 |              8 |         2.67 |
+|  inst_top_xadc/dut/dclk_bufg | inst_top_xadc/dut/di_drp[9]_i_1_n_0            |                                       |                2 |             10 |         5.00 |
+|  inst_top_xadc/dut/dclk_bufg | inst_top_xadc/dut/MEASURED_AUX2[15]_i_1_n_0    |                                       |                4 |             16 |         4.00 |
+|  inst_top_xadc/dut/dclk_bufg | inst_top_xadc/dut/MEASURED_AUX0[15]_i_1_n_0    |                                       |                6 |             16 |         2.67 |
+|  inst_top_xadc/dut/dclk_bufg | inst_top_xadc/dut/MEASURED_AUX3[15]_i_1_n_0    |                                       |                3 |             16 |         5.33 |
+|  inst_top_xadc/dut/dclk_bufg | inst_top_xadc/dut/MEASURED_VCCAUX[15]_i_1_n_0  |                                       |                5 |             16 |         3.20 |
+|  inst_top_xadc/dut/dclk_bufg | inst_top_xadc/dut/MEASURED_VCCBRAM[15]_i_1_n_0 |                                       |                4 |             16 |         4.00 |
+|  inst_top_xadc/dut/dclk_bufg | inst_top_xadc/dut/MEASURED_AUX1[15]_i_1_n_0    |                                       |                5 |             16 |         3.20 |
+|  inst_top_xadc/dut/dclk_bufg | inst_top_xadc/dut/MEASURED_VCCINT[15]_i_1_n_0  |                                       |                6 |             16 |         2.67 |
+|  inst_top_xadc/dut/dclk_bufg | inst_top_xadc/dut/MEASURED_TEMP[15]_i_1_n_0    |                                       |                3 |             16 |         5.33 |
+|  clk_IBUF_BUFG               | inst_alm/led_1s_1                              | inst_crono_digital/dseg_unit/reset_0  |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG               |                                                | reset_IBUF                            |                5 |             18 |         3.60 |
+|  clk_IBUF_BUFG               |                                                |                                       |                5 |             20 |         4.00 |
+|  clk_IBUF_BUFG               | inst_crono_digital/dseg_unit/E[0]              | inst_crono_digital/dseg_unit/reset    |                6 |             27 |         4.50 |
++------------------------------+------------------------------------------------+---------------------------------------+------------------+----------------+--------------+
+
+

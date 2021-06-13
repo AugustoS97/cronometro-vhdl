@@ -90,6 +90,8 @@ read_vhdl -library xil_defaultlib {
   C:/Users/Augusto/Desktop/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/new/alarm.vhd
   C:/Users/Augusto/Desktop/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/contador.vhd
   C:/Users/Augusto/Desktop/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/crono_basico.vhd
+  C:/Users/Augusto/Desktop/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/top_level.vhd
+  C:/Users/Augusto/Desktop/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/ug480.vhd
   C:/Users/Augusto/Desktop/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/new/cronometro_top.vhd
 }
 OPTRACE "Adding files" END { }

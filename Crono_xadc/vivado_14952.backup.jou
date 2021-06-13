@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed May 26 16:12:15 2021
+# Process ID: 14952
+# Current directory: C:/Users/rober/Desktop/Crono_xadc
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6628 C:\Users\rober\Desktop\Crono_xadc\Crono_xadc.xpr
+# Log file: C:/Users/rober/Desktop/Crono_xadc/vivado.log
+# Journal file: C:/Users/rober/Desktop/Crono_xadc\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/rober/Desktop/Crono_xadc/Crono_xadc.xpr
+update_compile_order -fileset sources_1
