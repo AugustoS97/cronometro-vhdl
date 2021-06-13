@@ -41,6 +41,7 @@ entity cronometro_top is
         an : out std_logic_vector(7 downto 0); 
         led1_rgb, led2_rgb : out std_logic_vector (1 downto 0);
         sel : in std_logic_vector (2 downto 0); --Selector de parametro a visualizar en xadc
+        time_out : in std_logic_vector (7 downto 0);
         modo : in std_logic --Selector de modo crono o xadc
         
   );
@@ -65,6 +66,7 @@ component crono
            alarma : out std_logic;
            sw_alarm_on : in std_logic;
 		   an : out std_logic_vector(7 downto 0);
+		   time_out : in std_logic_vector (7 downto 0);
            ce : in  STD_LOGIC);
 end component;
 
@@ -105,6 +107,7 @@ begin
 		   an => an_signal_crono,
 		   sw_alarm_on => sw_alarm_on,
 		   alarma => alarma_signal,
+		   time_out => time_out,
            ce => ce     
     );     
 
@@ -134,7 +137,7 @@ begin
            alarm => leds_signal_xadc (7 downto 0)
     );
 
-process (modo)
+process (modo, leds_signal_alarm, led_signal_crono, an_signal_crono, led_signal_xadc, leds_signal_xadc, an_signal_xadc)
 begin
    if modo = '1' then --Si se elige alarma
         leds <= leds_signal_alarm;

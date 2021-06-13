@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Sun Jun 13 18:42:12 2021
+| Date         : Sun Jun 13 19:12:11 2021
 | Host         : DESKTOP-NFORTEC running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file cronometro_top_control_sets_placed.rpt
 | Design       : cronometro_top
@@ -58,11 +58,11 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              24 |            8 |
-| No           | No                    | Yes                    |               9 |            6 |
+| No           | No                    | No                     |              24 |            7 |
+| No           | No                    | Yes                    |               9 |            4 |
 | No           | Yes                   | No                     |              18 |            5 |
-| Yes          | No                    | No                     |             143 |           40 |
-| Yes          | No                    | Yes                    |              79 |           25 |
+| Yes          | No                    | No                     |             143 |           37 |
+| Yes          | No                    | Yes                    |              79 |           29 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -73,32 +73,32 @@ Table of Contents
 +--------------------------+--------------------------------------------+-------------------------------+------------------+----------------+--------------+
 |       Clock Signal       |                Enable Signal               |        Set/Reset Signal       | Slice Load Count | Bel Load Count | Bels / Slice |
 +--------------------------+--------------------------------------------+-------------------------------+------------------+----------------+--------------+
-|  xadc_inst/dut/dclk_bufg |                                            |                               |                3 |              4 |         1.33 |
-|  clk_IBUF_BUFG           |                                            | crono_inst/dseg_unit/reset    |                2 |              4 |         2.00 |
-|  clk_IBUF_BUFG           | crono_inst/divisorfrec_unit/E[0]           | crono_inst/decimas_unit/AR[0] |                3 |              4 |         1.33 |
-|  clk_IBUF_BUFG           | crono_inst/divisorfrec_unit/E[0]           | reset_IBUF                    |                3 |              4 |         1.33 |
-|  clk_IBUF_BUFG           | crono_inst/centesimas_unit/ce7_out         | crono_inst/decimas_unit/AR[0] |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG           |                                            | crono_inst/sw_alarm_reset_0   |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG           | crono_inst/divisorfrec_unit/E[0]           | reset_IBUF                    |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG           | crono_inst/divisorfrec_unit/E[0]           | crono_inst/decimas_unit/AR[0] |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG           | crono_inst/centesimas_unit/ce7_out         | crono_inst/decimas_unit/AR[0] |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG           | crono_inst/decimas_unit/q_reg[2]_0[0]      | crono_inst/decimas_unit/AR[0] |                2 |              4 |         2.00 |
 |  clk_IBUF_BUFG           | crono_inst/decimas_unit/E[0]               | crono_inst/decimas_unit/AR[0] |                1 |              4 |         4.00 |
-|  clk_IBUF_BUFG           | crono_inst/decimas_unit/q_reg[2]_0[0]      | crono_inst/decimas_unit/AR[0] |                1 |              4 |         4.00 |
-|  clk_IBUF_BUFG           | crono_inst/minutos_unit/E[0]               | crono_inst/decimas_unit/AR[0] |                1 |              4 |         4.00 |
 |  clk_IBUF_BUFG           | crono_inst/minutos_unit/q_reg[2]_0[0]      | crono_inst/decimas_unit/AR[0] |                1 |              4 |         4.00 |
-|  clk_IBUF_BUFG           | crono_inst/dseg_unit/q_reg[3]_0[0]         | crono_inst/decimas_unit/AR[0] |                1 |              4 |         4.00 |
-|  clk_IBUF_BUFG           | crono_inst/dseg_unit/q_reg[3]_1[0]         | crono_inst/decimas_unit/AR[0] |                1 |              4 |         4.00 |
-|  xadc_inst/dut/dclk_bufg |                                            | reset_IBUF                    |                4 |              5 |         1.25 |
-|  xadc_inst/dut/dclk_bufg | xadc_inst/dut/daddr[6]_i_1_n_0             |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG           | crono_inst/minutos_unit/E[0]               | crono_inst/decimas_unit/AR[0] |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG           | crono_inst/dseg_unit/q_reg[3]_1[0]         | crono_inst/decimas_unit/AR[0] |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG           | crono_inst/dseg_unit/E[0]                  | crono_inst/decimas_unit/AR[0] |                1 |              4 |         4.00 |
+|  xadc_inst/dut/dclk_bufg |                                            |                               |                2 |              4 |         2.00 |
+|  xadc_inst/dut/dclk_bufg |                                            | reset_IBUF                    |                3 |              5 |         1.67 |
+|  xadc_inst/dut/dclk_bufg | xadc_inst/dut/daddr[6]_i_1_n_0             |                               |                1 |              5 |         5.00 |
 |  xadc_inst/dut/dclk_bufg | xadc_inst/dut/di_drp[9]_i_1_n_0            |                               |                2 |             10 |         5.00 |
-|  xadc_inst/dut/dclk_bufg | xadc_inst/dut/MEASURED_AUX3[15]_i_1_n_0    |                               |                4 |             16 |         4.00 |
-|  xadc_inst/dut/dclk_bufg | xadc_inst/dut/MEASURED_TEMP[15]_i_1_n_0    |                               |                3 |             16 |         5.33 |
-|  xadc_inst/dut/dclk_bufg | xadc_inst/dut/MEASURED_VCCAUX[15]_i_1_n_0  |                               |                5 |             16 |         3.20 |
-|  xadc_inst/dut/dclk_bufg | xadc_inst/dut/MEASURED_VCCBRAM[15]_i_1_n_0 |                               |                5 |             16 |         3.20 |
-|  xadc_inst/dut/dclk_bufg | xadc_inst/dut/MEASURED_VCCINT[15]_i_1_n_0  |                               |                8 |             16 |         2.00 |
-|  xadc_inst/dut/dclk_bufg | xadc_inst/dut/MEASURED_AUX2[15]_i_1_n_0    |                               |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG           | alarm_inst/leds_signal_1                   | crono_inst/sw_alarm_reset_0   |                7 |             16 |         2.29 |
+|  xadc_inst/dut/dclk_bufg | xadc_inst/dut/MEASURED_AUX2[15]_i_1_n_0    |                               |                8 |             16 |         2.00 |
+|  xadc_inst/dut/dclk_bufg | xadc_inst/dut/MEASURED_VCCAUX[15]_i_1_n_0  |                               |                3 |             16 |         5.33 |
+|  xadc_inst/dut/dclk_bufg | xadc_inst/dut/MEASURED_VCCINT[15]_i_1_n_0  |                               |                7 |             16 |         2.29 |
+|  xadc_inst/dut/dclk_bufg | xadc_inst/dut/MEASURED_AUX0[15]_i_1_n_0    |                               |                2 |             16 |         8.00 |
 |  xadc_inst/dut/dclk_bufg | xadc_inst/dut/MEASURED_AUX1[15]_i_1_n_0    |                               |                2 |             16 |         8.00 |
-|  xadc_inst/dut/dclk_bufg | xadc_inst/dut/MEASURED_AUX0[15]_i_1_n_0    |                               |                5 |             16 |         3.20 |
-|  clk_IBUF_BUFG           | alarm_inst/leds_signal_1                   | crono_inst/dseg_unit/reset    |                5 |             16 |         3.20 |
+|  xadc_inst/dut/dclk_bufg | xadc_inst/dut/MEASURED_VCCBRAM[15]_i_1_n_0 |                               |                7 |             16 |         2.29 |
+|  xadc_inst/dut/dclk_bufg | xadc_inst/dut/MEASURED_TEMP[15]_i_1_n_0    |                               |                3 |             16 |         5.33 |
+|  xadc_inst/dut/dclk_bufg | xadc_inst/dut/MEASURED_AUX3[15]_i_1_n_0    |                               |                2 |             16 |         8.00 |
 |  clk_IBUF_BUFG           |                                            | reset_IBUF                    |                5 |             18 |         3.60 |
 |  clk_IBUF_BUFG           |                                            |                               |                5 |             20 |         4.00 |
-|  clk_IBUF_BUFG           | crono_inst/dseg_unit/E[0]                  | crono_inst/dseg_unit/reset_0  |                7 |             27 |         3.86 |
+|  clk_IBUF_BUFG           | crono_inst/E[0]                            | crono_inst/sw_alarm_reset     |                8 |             27 |         3.38 |
 +--------------------------+--------------------------------------------+-------------------------------+------------------+----------------+--------------+
 
 

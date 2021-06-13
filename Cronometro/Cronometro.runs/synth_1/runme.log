@@ -17,72 +17,72 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 12700
+INFO: [Synth 8-7075] Helper process launched with PID 14968
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1032.281 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1035.492 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'cronometro_top' [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/new/cronometro_top.vhd:49]
-INFO: [Synth 8-3491] module 'crono' declared at 'C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/crono_basico.vhd:5' bound to instance 'crono_inst' of component 'crono' [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/new/cronometro_top.vhd:99]
-INFO: [Synth 8-638] synthesizing module 'crono' [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/crono_basico.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'cronometro_top' [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/new/cronometro_top.vhd:50]
+INFO: [Synth 8-3491] module 'crono' declared at 'C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/crono_basico.vhd:5' bound to instance 'crono_inst' of component 'crono' [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/new/cronometro_top.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'crono' [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/crono_basico.vhd:18]
 	Parameter module bound to: 1000000 - type: integer 
 	Parameter width bound to: 20 - type: integer 
-INFO: [Synth 8-3491] module 'contador' declared at 'C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/contador.vhd:11' bound to instance 'divisorfrec_unit' of component 'contador' [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/crono_basico.vhd:44]
+INFO: [Synth 8-3491] module 'contador' declared at 'C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/contador.vhd:11' bound to instance 'divisorfrec_unit' of component 'contador' [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/crono_basico.vhd:46]
 INFO: [Synth 8-638] synthesizing module 'contador' [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/contador.vhd:21]
 	Parameter module bound to: 1000000 - type: integer 
 	Parameter width bound to: 20 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'contador' (1#1) [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/contador.vhd:21]
 	Parameter module bound to: 10 - type: integer 
 	Parameter width bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'contador' declared at 'C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/contador.vhd:11' bound to instance 'centesimas_unit' of component 'contador' [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/crono_basico.vhd:58]
+INFO: [Synth 8-3491] module 'contador' declared at 'C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/contador.vhd:11' bound to instance 'centesimas_unit' of component 'contador' [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/crono_basico.vhd:60]
 INFO: [Synth 8-638] synthesizing module 'contador__parameterized1' [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/contador.vhd:21]
 	Parameter module bound to: 10 - type: integer 
 	Parameter width bound to: 4 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'contador__parameterized1' (1#1) [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/contador.vhd:21]
 	Parameter module bound to: 10 - type: integer 
 	Parameter width bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'contador' declared at 'C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/contador.vhd:11' bound to instance 'decimas_unit' of component 'contador' [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/crono_basico.vhd:71]
+INFO: [Synth 8-3491] module 'contador' declared at 'C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/contador.vhd:11' bound to instance 'decimas_unit' of component 'contador' [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/crono_basico.vhd:73]
 	Parameter module bound to: 10 - type: integer 
 	Parameter width bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'contador' declared at 'C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/contador.vhd:11' bound to instance 'segundos_unit' of component 'contador' [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/crono_basico.vhd:84]
+INFO: [Synth 8-3491] module 'contador' declared at 'C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/contador.vhd:11' bound to instance 'segundos_unit' of component 'contador' [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/crono_basico.vhd:86]
 	Parameter module bound to: 6 - type: integer 
 	Parameter width bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'contador' declared at 'C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/contador.vhd:11' bound to instance 'dseg_unit' of component 'contador' [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/crono_basico.vhd:97]
+INFO: [Synth 8-3491] module 'contador' declared at 'C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/contador.vhd:11' bound to instance 'dseg_unit' of component 'contador' [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/crono_basico.vhd:99]
 INFO: [Synth 8-638] synthesizing module 'contador__parameterized3' [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/contador.vhd:21]
 	Parameter module bound to: 6 - type: integer 
 	Parameter width bound to: 4 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'contador__parameterized3' (1#1) [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/contador.vhd:21]
 	Parameter module bound to: 10 - type: integer 
 	Parameter width bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'contador' declared at 'C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/contador.vhd:11' bound to instance 'minutos_unit' of component 'contador' [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/crono_basico.vhd:110]
+INFO: [Synth 8-3491] module 'contador' declared at 'C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/contador.vhd:11' bound to instance 'minutos_unit' of component 'contador' [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/crono_basico.vhd:112]
 	Parameter module bound to: 6 - type: integer 
 	Parameter width bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'contador' declared at 'C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/contador.vhd:11' bound to instance 'dminutos_unit' of component 'contador' [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/crono_basico.vhd:123]
+INFO: [Synth 8-3491] module 'contador' declared at 'C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/contador.vhd:11' bound to instance 'dminutos_unit' of component 'contador' [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/crono_basico.vhd:125]
 	Parameter module bound to: 4 - type: integer 
 	Parameter width bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'contador' declared at 'C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/contador.vhd:11' bound to instance 'horas_unit' of component 'contador' [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/crono_basico.vhd:137]
+INFO: [Synth 8-3491] module 'contador' declared at 'C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/contador.vhd:11' bound to instance 'horas_unit' of component 'contador' [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/crono_basico.vhd:139]
 INFO: [Synth 8-638] synthesizing module 'contador__parameterized5' [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/contador.vhd:21]
 	Parameter module bound to: 4 - type: integer 
 	Parameter width bound to: 4 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'contador__parameterized5' (1#1) [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/contador.vhd:21]
 	Parameter module bound to: 3 - type: integer 
 	Parameter width bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'contador' declared at 'C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/contador.vhd:11' bound to instance 'dhoras_unit' of component 'contador' [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/crono_basico.vhd:150]
+INFO: [Synth 8-3491] module 'contador' declared at 'C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/contador.vhd:11' bound to instance 'dhoras_unit' of component 'contador' [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/crono_basico.vhd:152]
 INFO: [Synth 8-638] synthesizing module 'contador__parameterized7' [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/contador.vhd:21]
 	Parameter module bound to: 3 - type: integer 
 	Parameter width bound to: 4 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'contador__parameterized7' (1#1) [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/contador.vhd:21]
 	Parameter module bound to: 9 - type: integer 
 	Parameter width bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'contador' declared at 'C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/contador.vhd:11' bound to instance 'display_count' of component 'contador' [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/crono_basico.vhd:169]
+INFO: [Synth 8-3491] module 'contador' declared at 'C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/contador.vhd:11' bound to instance 'display_count' of component 'contador' [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/crono_basico.vhd:171]
 INFO: [Synth 8-638] synthesizing module 'contador__parameterized9' [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/contador.vhd:21]
 	Parameter module bound to: 9 - type: integer 
 	Parameter width bound to: 4 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'contador__parameterized9' (1#1) [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/contador.vhd:21]
-INFO: [Synth 8-256] done synthesizing module 'crono' (2#1) [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/crono_basico.vhd:16]
-INFO: [Synth 8-3491] module 'alarm' declared at 'C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/new/alarm.vhd:34' bound to instance 'alarm_inst' of component 'alarm' [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/new/cronometro_top.vhd:111]
+INFO: [Synth 8-256] done synthesizing module 'crono' (2#1) [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/crono_basico.vhd:18]
+INFO: [Synth 8-3491] module 'alarm' declared at 'C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/new/alarm.vhd:34' bound to instance 'alarm_inst' of component 'alarm' [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/new/cronometro_top.vhd:114]
 INFO: [Synth 8-638] synthesizing module 'alarm' [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/new/alarm.vhd:45]
 INFO: [Synth 8-256] done synthesizing module 'alarm' (3#1) [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/new/alarm.vhd:45]
-INFO: [Synth 8-3491] module 'top_level' declared at 'C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/top_level.vhd:35' bound to instance 'xadc_inst' of component 'top_level' [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/new/cronometro_top.vhd:123]
+INFO: [Synth 8-3491] module 'top_level' declared at 'C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/top_level.vhd:35' bound to instance 'xadc_inst' of component 'top_level' [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/new/cronometro_top.vhd:126]
 INFO: [Synth 8-638] synthesizing module 'top_level' [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/top_level.vhd:46]
 INFO: [Synth 8-3491] module 'ug480' declared at 'C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/ug480.vhd:44' bound to instance 'dut' of component 'ug480' [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/top_level.vhd:91]
 INFO: [Synth 8-638] synthesizing module 'ug480' [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/ug480.vhd:70]
@@ -125,30 +125,21 @@ INFO: [Synth 8-113] binding component instance 'U_BUFG' to cell 'BUFG' [C:/Users
 	Parameter SIM_MONITOR_FILE bound to: design.txt - type: string 
 INFO: [Synth 8-113] binding component instance 'U0' to cell 'XADC' [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/ug480.vhd:115]
 INFO: [Synth 8-256] done synthesizing module 'ug480' (4#1) [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/ug480.vhd:70]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 2 wide and choice expression is 4 wide [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/top_level.vhd:155]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 2 wide and choice expression is 4 wide [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/top_level.vhd:156]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 2 wide and choice expression is 4 wide [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/top_level.vhd:157]
 INFO: [Synth 8-256] done synthesizing module 'top_level' (5#1) [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/top_level.vhd:46]
-WARNING: [Synth 8-614] signal 'leds_signal_alarm' is read in the process but is not in the sensitivity list [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/new/cronometro_top.vhd:137]
-WARNING: [Synth 8-614] signal 'led_signal_crono' is read in the process but is not in the sensitivity list [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/new/cronometro_top.vhd:137]
-WARNING: [Synth 8-614] signal 'an_signal_crono' is read in the process but is not in the sensitivity list [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/new/cronometro_top.vhd:137]
-WARNING: [Synth 8-614] signal 'led_signal_xadc' is read in the process but is not in the sensitivity list [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/new/cronometro_top.vhd:137]
-WARNING: [Synth 8-614] signal 'leds_signal_xadc' is read in the process but is not in the sensitivity list [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/new/cronometro_top.vhd:137]
-WARNING: [Synth 8-614] signal 'an_signal_xadc' is read in the process but is not in the sensitivity list [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/new/cronometro_top.vhd:137]
-INFO: [Synth 8-256] done synthesizing module 'cronometro_top' (6#1) [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/new/cronometro_top.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'cronometro_top' (6#1) [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/new/cronometro_top.vhd:50]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1056.723 ; gain = 24.441
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1055.863 ; gain = 20.371
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1056.723 ; gain = 24.441
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1055.863 ; gain = 20.371
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1056.723 ; gain = 24.441
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1055.863 ; gain = 20.371
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1056.723 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1055.863 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -161,26 +152,26 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/cronometro_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1169.020 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1167.883 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1169.020 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1167.883 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1169.020 ; gain = 136.738
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1167.883 ; gain = 132.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1169.020 ; gain = 136.738
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1167.883 ; gain = 132.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1169.020 ; gain = 136.738
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1167.883 ; gain = 132.391
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ug480'
 ---------------------------------------------------------------------------------------------------
@@ -208,7 +199,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ug480
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'ug480'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1169.020 ; gain = 136.738
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1167.883 ; gain = 132.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -257,25 +248,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1169.020 ; gain = 136.738
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1167.883 ; gain = 132.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1169.020 ; gain = 136.738
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1167.883 ; gain = 132.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1200.070 ; gain = 167.789
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1200.312 ; gain = 164.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1210.160 ; gain = 177.879
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1210.355 ; gain = 174.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -294,37 +285,37 @@ Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-5410] Found another clock driver \xadc_inst/dut/U_BUFG :O [C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.srcs/sources_1/imports/Desktop/ug480.vhd:109]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1210.160 ; gain = 177.879
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1210.355 ; gain = 174.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1210.160 ; gain = 177.879
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1210.355 ; gain = 174.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1210.160 ; gain = 177.879
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1210.355 ; gain = 174.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1210.160 ; gain = 177.879
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1210.355 ; gain = 174.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1210.160 ; gain = 177.879
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1210.355 ; gain = 174.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1210.160 ; gain = 177.879
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1210.355 ; gain = 174.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -341,41 +332,41 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     2|
-|2     |CARRY4 |    17|
-|3     |LUT1   |    24|
-|4     |LUT2   |    34|
+|2     |CARRY4 |    19|
+|3     |LUT1   |    25|
+|4     |LUT2   |    33|
 |5     |LUT3   |    52|
-|6     |LUT4   |    51|
+|6     |LUT4   |    50|
 |7     |LUT5   |    32|
-|8     |LUT6   |    81|
+|8     |LUT6   |    83|
 |9     |MUXF7  |    16|
 |10    |XADC   |     1|
 |11    |FDCE   |    85|
 |12    |FDPE   |     1|
 |13    |FDRE   |   185|
-|14    |IBUF   |     9|
+|14    |IBUF   |    17|
 |15    |OBUF   |    36|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1210.160 ; gain = 177.879
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1210.355 ; gain = 174.863
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 1210.160 ; gain = 65.582
-Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1210.160 ; gain = 177.879
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 1210.355 ; gain = 62.844
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1210.355 ; gain = 174.863
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1210.160 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 34 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1210.355 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 36 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1210.160 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1211.344 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-57 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+57 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1210.160 ; gain = 177.879
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1211.344 ; gain = 175.852
 INFO: [Common 17-1381] The checkpoint 'C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.runs/synth_1/cronometro_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file cronometro_top_utilization_synth.rpt -pb cronometro_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Jun 13 18:41:34 2021...
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 13 19:11:33 2021...

@@ -10,7 +10,9 @@ entity crono is
            alarma : out std_logic;
            sw_alarm_on : in std_logic;
 		   an : out std_logic_vector(7 downto 0);
-           ce : in  STD_LOGIC);
+           ce : in  STD_LOGIC;
+           time_out : in std_logic_vector (7 downto 0) -- Tiempo de la alarma (8 bits: 4 bits para unidades de segundo y 4 bits para decenas segundo)
+           );
 end crono;
 
 architecture Behavioral of crono is
@@ -66,7 +68,7 @@ begin
 		ce => ce_centesimas,
 		top => top_centesimas
 	);
-	ce_decimas <= top_centesimas and top_divisor and ce;
+	ce_decimas <= top_centesimas and top_divisor and ce; --Se pone decimas a 1 cuanto centesimas y divisor llegan a los topes
 	
     decimas_unit: contador 
 	generic map(
@@ -79,7 +81,7 @@ begin
 		ce => ce_decimas,
 		top => top_decimas
 	);
-	ce_useg <= top_decimas and top_divisor and top_centesimas and ce;
+	ce_useg <= top_decimas and top_centesimas and top_divisor and ce; --Se pone useg a 1 cuando ha llegado al top de decimas, centimas y divisor
 	
 	segundos_unit: contador 
 	generic map(
@@ -160,7 +162,9 @@ begin
 	);
 
 -- Puerta OR
+    -- Se pone a 1 el mayor de las cuentas cuando s ehan llegado a todos los tops, es decir a 23:59:59:99
 	ce_top <= top_dhoras and top_horas and top_dminutos and top_minutos and top_dseg and top_useg and top_decimas and top_centesimas and top_divisor and ce;
+	--Se resetea al llegar al tope o bien con un reset
 	reset_int <= reset or ce_top;
 	
 
@@ -245,11 +249,11 @@ with cuenta select
 
 -- Alarma
 
-value <= dminutos & minutos & dseg &useg ;
+value <= dminutos & minutos & dseg &useg ; --Se concatenan los valores del cornometro para la alarma
 
-process (value, sw_alarm_on, reset)
+process (value, sw_alarm_on, reset, time_out)
     begin
-        if sw_alarm_on = '1' and value = "0000000000100000" then
+        if sw_alarm_on = '1' and value = ("00000000" & time_out) then
             alarm <= '1';
             ce_alarm <= '0';
         else

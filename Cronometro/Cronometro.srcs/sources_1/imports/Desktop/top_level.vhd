@@ -152,9 +152,9 @@ begin
 end process;
 
     with sel_dig SELect
-   an<=  "11111101" when "0001",   --1
-         "11111011" when "0010",   --2
-         "11110111" when "0011",   --3
+   an<=  "11111101" when "01",   --1
+         "11111011" when "10",   --2
+         "11110111" when "11",   --3
          "11111110" when others;   --0
 
     with led_int2 SELect

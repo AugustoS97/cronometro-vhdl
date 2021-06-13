@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date             : Sun Jun 13 18:42:38 2021
+| Date             : Sun Jun 13 19:12:38 2021
 | Host             : DESKTOP-NFORTEC running 64-bit major release  (build 9200)
 | Command          : report_power -file cronometro_top_power_routed.rpt -pb cronometro_top_power_summary_routed.pb -rpx cronometro_top_power_routed.rpx
 | Design           : cronometro_top
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.124        |
+| Total On-Chip Power (W)  | 0.123        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.027        |
+| Dynamic (W)              | 0.026        |
 | Device Static (W)        | 0.097        |
 | Effective TJA (C/W)      | 4.6          |
 | Max Ambient (C)          | 84.4         |
@@ -52,18 +52,18 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.003 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      588 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      202 |     63400 |            0.32 |
-|   CARRY4       |    <0.001 |       17 |     15850 |            0.11 |
+| Clocks         |     0.002 |        3 |       --- |             --- |
+| Slice Logic    |    <0.001 |      593 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      206 |     63400 |            0.32 |
+|   CARRY4       |    <0.001 |       19 |     15850 |            0.12 |
 |   Register     |    <0.001 |      273 |    126800 |            0.22 |
 |   F7/F8 Muxes  |    <0.001 |       16 |     63400 |            0.03 |
-|   Others       |     0.000 |        8 |       --- |             --- |
-| Signals        |    <0.001 |      502 |       --- |             --- |
-| I/O            |     0.021 |       45 |       210 |           21.43 |
+|   Others       |     0.000 |       10 |       --- |             --- |
+| Signals        |     0.001 |      509 |       --- |             --- |
+| I/O            |     0.021 |       53 |       210 |           25.24 |
 | XADC           |     0.002 |        1 |       --- |             --- |
 | Static Power   |     0.097 |          |           |                 |
-| Total          |     0.124 |          |           |                 |
+| Total          |     0.123 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.020 |       0.005 |      0.015 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.019 |       0.004 |      0.015 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.019 |       0.001 |      0.018 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.010 |       0.006 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -142,7 +142,7 @@ Table of Contents
 +----------------+-----------+
 | Name           | Power (W) |
 +----------------+-----------+
-| cronometro_top |     0.027 |
+| cronometro_top |     0.026 |
 |   xadc_inst    |     0.004 |
 |     dut        |     0.004 |
 +----------------+-----------+
