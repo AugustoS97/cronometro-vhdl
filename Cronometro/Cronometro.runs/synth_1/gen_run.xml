@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1623611032">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1623696538">
   <File Type="PA-TCL" Name="cronometro_top.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="cronometro_top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="cronometro_top_reports.tcl"/>
   <File Type="RDS-RDS" Name="cronometro_top.vds"/>
   <File Type="RDS-UTIL" Name="cronometro_top_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="cronometro_top_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="cronometro_top.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="cronometro_top_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="cronometro_top_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/alarm.vhd">

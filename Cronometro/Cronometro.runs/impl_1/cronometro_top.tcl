@@ -123,7 +123,6 @@ set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
   set_param chipscope.maxJobs 3
-  set_param xicom.use_bs_reader 1
   open_checkpoint cronometro_top_routed.dcp
   set_property webtalk.parent_dir C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.cache/wt [current_project]
 set_property TOP cronometro_top [current_fileset]

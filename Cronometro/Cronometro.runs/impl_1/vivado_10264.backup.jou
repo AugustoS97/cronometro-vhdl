@@ -2,8 +2,8 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Sun Jun 13 20:04:38 2021
-# Process ID: 14224
+# Start of session at: Mon Jun 14 19:49:46 2021
+# Process ID: 10264
 # Current directory: C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.runs/impl_1
 # Command line: vivado.exe -log cronometro_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source cronometro_top.tcl -notrace
 # Log file: C:/Users/augus.DESKTOP-NFORTEC/Documents/FPGA_Proyecto1/Cronometro/Cronometro.runs/impl_1/cronometro_top.vdi
